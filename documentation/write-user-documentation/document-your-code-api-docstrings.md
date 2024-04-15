@@ -12,21 +12,21 @@ that adds up a bunch of numbers. To add up numbers, you as the user
 simply call `add_numbers(1,2,3)` and the package function calculates the value and returns `6`. By calling the `add_numbers` function, you are
 using the package's API.
 
-Package APIs consist of functions, classes, methods and attributes that create a user interface.
+Package APIs consist of functions, classes, methods, and attributes that create a user interface.
 
 ## What is a docstring and how does it relate to documentation?
 
-In Python a docstring refers to text in a function, method or class
+In Python, a docstring refers to text in a function, method, or class
 that describes what the function does and its inputs and outputs. Python programmers usually refer to the inputs to functions as ["parameters"](https://docs.python.org/3/glossary.html#term-parameter) or ["arguments"](https://docs.python.org/3/faq/programming.html#faq-argument-vs-parameter), and the outputs are often called "return values"
 
 The docstring is thus important for:
 
-- When you call `help()` in Python, for example, `help(add_numbers)` will show the text of the function's docstring. The docstring thus helps a user better understand how to applying the function more effectively to their workflow.
-- When you build your package's documentation, the docstrings can also be used to automagically create full API documentation that provides a clean view of all its functions, classes, methods, and attributes.
+- When you call `help()` in Python, for example, `help(add_numbers)` will show the text of the function's docstring. The docstring thus helps a user better understand how to apply the function more effectively to their workflow.
+- When you build your package's documentation, the docstrings can also be used to automatically create full API documentation that provides a clean view of all its functions, classes, methods, and attributes.
 
 ```{tip}
 Example API Documentation for all functions, classes, methods, and attributes in a package.
-* [View example high level API documentation for the Verde package. This page lists every function and class in the package along with a brief explanation of what it does](https://www.fatiando.org/verde/latest/api/index.html)
+* [View example high-level API documentation for the Verde package. This page lists every function and class in the package along with a brief explanation of what it does](https://www.fatiando.org/verde/latest/api/index.html)
 * [You can further dig down to see what a specific function does within the package by clicking on an API element](https://www.fatiando.org/verde/latest/api/generated/verde.grid_coordinates.html#verde.grid_coordinates)
 ```
 
@@ -69,10 +69,10 @@ to properly read and format NumPy format docstrings.
 
 ### Docstring examples Better and Best
 
-Below is a good example of a well documented function. Notice that this
+Below is a good example of a well-documented function. Notice that this
 function's docstring describes the function's inputs and the function's output
 (or return value). The initial description of the function is short (one line).
-Following that single line description there is a slightly longer description of
+Following that single-line description, there is a slightly longer description of
 what the function does (2 to 3 sentences). The return of the function is also
 specified.
 
@@ -167,7 +167,7 @@ doctest adding another quality check to your package.
 <!-- This link isn't working no matter how i create the target. not sure
 why -->
 
-Above, we provided some examples of good, better, best docstring formats. If you are using Sphinx to create your docs, you can add the [doctest](https://www.sphinx-doc.org/en/master/usage/extensions/doctest.html) extension to your Sphinx build. Doctest provides an additional check for docstrings with example code in them.
+Above, we provided some examples of good, better, and best docstring formats. If you are using Sphinx to create your docs, you can add the [doctest](https://www.sphinx-doc.org/en/master/usage/extensions/doctest.html) extension to your Sphinx build. Doctest provides an additional check for docstrings with example code in them.
 Doctest runs the example code in your docstring `Examples` checking
 that the expected output is correct. Similar to running
 tutorials in your documentation, `doctest` can be a useful step that
